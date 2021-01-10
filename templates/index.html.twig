@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Welcome !{% endblock %}
+{% block body %}
+    
+<div id="app">
+    <section id="header">
+        <site-header :author="author" :company="company"></site-header>
+    </section>
+    <section>
+        <intro></intro>
+    </section>
+
+    <section id="assignment" class="p-6">
+        <div class="pb-5" style="width: 100%; text-align: center;">
+            <h1 class="title is-size-1">PHP opdracht</h1>
+        </div>
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <h2 class="subtitle">Opdracht 1:</h2>
+                <div class="columns">
+                    {% for name, books in result1 %}
+                        <div class="column">        
+                            <card>
+                                <span slot="title">{{ name }}</span>
+                            {% for book in books %}
+                                <span slot="item"><li>{{ book }}</li></span>
+                            {% endfor %}
+                            </card>
+                        </div>
+                    {% else %}
+                        Geen boeken gevonden.
+                    {% endfor %}
+                </div>
+                <div class="columns">
+                <div class="column">
+                    <h2 class="subtitle">Opdracht 2:</h2>
+                    <card>
+                        <span slot="title"> CMS </span>
+                        {% for cms in result2 %}
+                            <span slot="item"><li>{{ cms }}</li></span>
+                        {% endfor %}
+                    </card>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explanation">
+        <div class="columns is-multiline">
+            <div class="column is-8 is-offset-2">
+                <div class="pb-5">
+                    <div class="columns is-mobile is-centered">
+                        <div class="column is-half">
+                            <h1 class="title is-size-1">Uitleg PHP opdracht</h1>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile is-centered">
+                        <div class="column is-half">
+                            <h3 class="is-size-6">Opdracht 1:</h3>
+                            <p>Dit vond ik de lastigste van de twee. Ik zat eerst op het vekeerde spoor doordat ik een array maakte met van de personen om vervolgens door die nieuwe array te loopen en dan middels <code>array_search()</code> de key te vinden die als array onder de persoonsnaam moest komen. Toen ben ik vervolgens de uitkomst array uitgaan schrijven en heb ik bedacht ik dat het mogelijk was alles in een loop te doen. Toen kreeg ik een goede multidimensionale array, maar met steeds de eerste value als alle values van de namen array. Dus Dione had 3x book3. Dat komt omdat <code>array_search()</code> steeds dezelfde key vindt en die returned. Als je dan steeds dat die stap uit de array haalt dan heb je daar geen last meer van. Vandaar de <code>unset()</code> en door het resultaat in een variable te zetten hoeven we niet 2x <code>array_search()</code> te doen.</p>
+                            <small><i>Tijd: 10 min</i></small>
+                            <h3 class="is-size-6 mt-2">Opdracht 2:</h3>
+                            <p>Deze ging wat vlotter. Ik dacht hiervoor moet ik een <code>array_merge()</code> gebruiken, maar die returned natuurlijk een array met de duplicate values, die die zet ik in een <code>array_unique()</code>, dat was het.</p>        
+                            <small><i>Tijd: 5 min</i></small>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <site-footer :date="date" :author="author" :company="company"></site-footer>
+    </section>
+
+
+</div>
+
+{% endblock %}
