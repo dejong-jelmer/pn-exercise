@@ -8,7 +8,7 @@
         <site-header :author="author" :company="company"></site-header>
     </section>
     <section>
-        <intro :image="image"></intro>
+        <intro :image="image" :github="github"></intro>
     </section>
 
     <section id="assignment" class="p-6">
@@ -60,7 +60,7 @@
                             <p>Dit vond ik de lastigste van de twee. Ik zat eerst op het vekeerde spoor doordat ik een array maakte met van de personen om vervolgens door die nieuwe array te loopen en dan middels <code>array_search()</code> de key te vinden die als array onder de persoonsnaam moest komen. Toen ben ik vervolgens de uitkomst array uitgaan schrijven en heb ik bedacht ik dat het mogelijk was alles in een loop te doen. Toen kreeg ik een goede multidimensionale array, maar met steeds de eerste value als alle values van de namen array. Dus Dione had 3x book3. Dat komt omdat <code>array_search()</code> steeds dezelfde key vindt en die returned. Als je dan steeds dat die stap uit de array haalt dan heb je daar geen last meer van. Vandaar de <code>unset()</code> en door het resultaat in een variable te zetten hoeven we niet 2x <code>array_search()</code> te doen.</p>
                             <small><i>Tijd: 10 min</i></small>
                             <h3 class="is-size-6 mt-2">Opdracht 2:</h3>
-                            <p>Deze ging wat vlotter. Ik dacht hiervoor moet ik een <code>array_merge()</code> gebruiken, maar die returned natuurlijk een array met de duplicate values, die die zet ik in een <code>array_unique()</code>, dat was het.</p>        
+                            <p>Deze ging wat vlotter. Ik dacht: hiervoor moet ik een <code>array_merge()</code> gebruiken, maar die returned natuurlijk een array met de duplicate values, die zet ik dan in een <code>array_unique()</code>, dat was het.</p>        
                             <small><i>Tijd: 5 min</i></small>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
         </div>
     </section>
     <section id="footer">
-        <site-footer :date="date" :author="author" :company="company"></site-footer>
+        <site-footer :date="date" :author="author" :company="company" :github="github"></site-footer>
     </section>
 
 

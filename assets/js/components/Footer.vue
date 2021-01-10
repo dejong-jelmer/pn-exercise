@@ -2,7 +2,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Site door <a href="https://github.com/dejong-jelmer">{{ author }}</a> in opdracht van <a href="https://www.proudnerds.com/">{{ company }}</a>. &copy {{ date }}
+          Site door <a target="_blank" :href="github">{{ author }}</a> in opdracht van <a target="_blank" href="company.url">{{ company.name }}</a>. &copy {{ date }}
         </p>
       </div>
   </footer>
@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        props: ['author', 'company', 'date']
+        props: ['author', 'company', 'date', 'github']
     };
 </script>
 

@@ -7,7 +7,7 @@
                         {{ author }}
                     </h1>
                     <p class="subtitle">
-                        A test for <strong>{{ company }}</strong>
+                        A test for <strong>{{ company.name }}</strong>
                     </p>
                 </div>
             </div>

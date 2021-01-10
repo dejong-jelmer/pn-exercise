@@ -1,5 +1,5 @@
 <?php
-namespace Repository;
+namespace App\Repository;
 
 class ArrayFactory {
 

@@ -13,7 +13,7 @@
                     <author-image :source="image.source" :fallback="image.fallback"></author-image>
                     <div class="column">
                         <div class="button-wrapper is-pulled-right">
-                            <a class="button" target="_blank" href="https://github.com/dejong-jelmer">Mijn GitHub</a>
+                            <a class="button" target="_blank" :href="github">Mijn GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,8 @@
           AuthorImage
         },
         props: {
-          'image': Object
+          'image': Object,
+          'github': String
         }
     };
 </script>
