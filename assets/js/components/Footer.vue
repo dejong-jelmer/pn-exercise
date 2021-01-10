@@ -11,8 +11,7 @@
 <script>
     export default {
         props: ['author', 'company', 'date']
-    }
-    console.log("Footer loaded");
+    };
 </script>
 
 <style>

@@ -1,9 +1,13 @@
 <template>
     <figure class="image is-128x128">
-        <img src="img/pasfoto.jpg" alt="">
+        <img :src="source" :alt="fallback">
     </figure>
 </template>
-
+<script>
+    export default {
+        props: ['source', 'fallback']
+    };
+</script>
 <style>
     .image {
         height: auto !important;

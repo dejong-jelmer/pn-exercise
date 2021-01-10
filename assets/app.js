@@ -27,7 +27,8 @@ const app = new Vue({
     data: {
         author: 'Jelmer de Jong',
         date: new Date().getFullYear(),
-        company: 'Proud Nerds'
+        company: 'Proud Nerds',
+        image: {'source': 'img/pasfoto.jpg', 'fallback': 'foto van auteur'}
     },
     components: {
             siteHeader,

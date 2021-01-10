@@ -14,13 +14,3 @@
         </div>
     </div>
 </template>
-
-<script>
-    export default {
-        data() {
-            return {
-            }
-        }
-    }
-    console.log("Book loaded");
-</script>

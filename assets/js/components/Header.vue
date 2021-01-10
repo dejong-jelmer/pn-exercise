@@ -18,8 +18,7 @@
 <script>
     export default {
         props: ['author', 'company']
-    }
-    console.log("Header loaded");
+    };
 </script>
 <style>
     #header {
