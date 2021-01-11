@@ -11,7 +11,7 @@ An exercise as test for Proud Nerds
   - `$ composer install`
 * Run in terminal:
   - `$ php -S localhost:9030 -t public`
-* In your broswer go to:
+* In your browser go to:
   - `localhost:9030`
 
 # Requirements
