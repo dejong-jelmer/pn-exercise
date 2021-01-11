@@ -6,13 +6,13 @@ An exercise as test for Proud Nerds
 
 # Install & Run
 * To download run:
-- `$ git clone https://github.com/dejong-jelmer/pn-exercise.git`
+  - `$ git clone https://github.com/dejong-jelmer/pn-exercise.git`
 * After donwloading, run:
-- `$ composer install`
+  - `$ composer install`
 * Run in terminal:
-- `$ php -S localhost:9030 -t public`
-* In your brower go to:
-- `localhost:9030`
+  - `$ php -S localhost:9030 -t public`
+* In your broswer go to:
+  - `localhost:9030`
 
 # Requirements
 * php >= 7.2.5
