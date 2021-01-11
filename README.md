@@ -1,10 +1,8 @@
 # pn-exercise
 An exercise as test for Proud Nerds
 
-# Requirements
-* php >= 7.2.5
-* composer
-* git
+# Working example
+[heroku](https://pn-exercise.herokuapp.com/)
 
 # Install & Run
 To download run:
@@ -16,9 +14,12 @@ Run in terminal:
 In your brower go to:
 `localhost:9030`
 
+# Requirements
+* php >= 7.2.5
+* composer
+* git
 
-
-# framworks
+# Framworks
 This site was built using:
 * [Symfony](https://symfony.com/)
 * [Vue](https://vuejs.org/)
