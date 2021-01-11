@@ -5,8 +5,8 @@
     use Symfony\Component\Routing\Annotation\Route;
     use Symfony\Component\HttpFoundation\Request;
 
-    use Repository\Test;
-    use Repository\ArrayFactory;
+    use App\Repository\Test;
+    use App\Repository\ArrayFactory;
     
     class HomeController extends AbstractController
     {
